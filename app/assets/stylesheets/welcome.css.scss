@@ -1,0 +1,97 @@
+// Place all the styles related to the Sessions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$zolotoi: #FAA21A;
+$black: #000000;
+$biruzovuy: #00CED1;
+$white: #ffffff;
+$svetlo_seruy : #e5e5e5;
+$serebristuy: #C0C0C0;
+
+@mixin kontor_bloka
+{
+	outline: 1px solid $zolotoi; //kontor bloka;
+}
+
+@mixin kryglue_yglu
+{
+	//border-radius: 20px;
+	//box-shadow: 0 0 5px #e7d5c0;
+	border-radius: 20px;
+	box-shadow: 0 0 30px $black;
+}
+
+.text_in_center {
+	text-align: center;
+}
+
+.border_bottom {
+	border-bottom: 2px solid $black;
+}
+
+h1 {
+	text-align: center;
+}
+
+A {
+	color: $black;
+	text-decoration: none;
+}
+
+A:visited {
+	color: $black;
+}
+
+A:hover {
+	color: $biruzovuy;
+	background: $svetlo_seruy;
+}
+
+//Блок сверху
+#id_div_header {
+	margin: 10px 10px 0 10px;
+	height: 100px;
+	//@include kontor_bloka;
+	@include kryglue_yglu;
+	background: $svetlo_seruy;
+}
+
+//Блок слева
+#id_div_sidebarL {
+	margin: 20px 0 0 10px;
+	background: $svetlo_seruy;
+	height: 1000px;
+	width: 250px;
+	float: left;
+	//@include kontor_bloka;
+	@include kryglue_yglu;
+}
+
+//Блок контента
+#id_div_content {
+	margin: 20px 10px 0 280px;
+	//padding: 20px 10px 0 10px;
+	_height: 1000px;
+	@include kryglue_yglu;
+}
+
+//Блок yield
+#id_div_yield {	
+	//height: 100%;
+	//width: 600px;
+	
+}
+
+ul#id_ul_menu_main li {
+ 	display: inline;
+}
+
+ul#id_ul_blog_menu li {
+ 	display: inline;
+}
+
+.clear 
+{
+	clear:both;
+}

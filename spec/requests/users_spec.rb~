@@ -1,0 +1,9 @@
+require 'spec_helper'
+
+describe "Users" do
+
+	befor do
+		@user = User.new(name: "Pavel", email: "rrr@mail.ru", password: "qqqqeee333", password_confirmation: "qqqqeee333")
+	end
+
+end

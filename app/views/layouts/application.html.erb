@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Движок блога от Hazius</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="id_div_header"><%= render "layouts/header" %></div>
+	<div id="id_div_sidebarL"><%= render "layouts/sidebarL" %></div>
+	<div id="id_div_content">
+		<br>
+		<% if flash.any? %>
+			<% flash.each do |key, value| %>
+					<%= value %><br>
+			<% end %>
+		<% end %>
+		<div id="id_div_yield"><%= yield %></div>
+		<div class="clear"></div>	
+	</div>
+	<div><%= debug(params) if Rails.env.development? %></div>	
+
+</body>
+</html>

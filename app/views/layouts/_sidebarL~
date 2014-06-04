@@ -1,0 +1,17 @@
+<% blogs = get_blogs() %>
+
+<h3 class="text_in_center border_bottom">Блог пользователя:<br><%= get_user_which_created_blog().name %><br><br></h3>
+
+<% if created_blog?() %>
+	<div class="text_in_center">
+		<%= link_to("Создать запись в блоге", { controller: "blogs", action: "new", user_id: current_user().id }, { } ) %>
+	</div>
+<% end %>
+
+<% if !blogs.nil? %>
+	<ul>
+		<% blogs.each do |blog| %>
+			<li><%= link_to blog.title, blog %></li>
+		<% end %>
+	</ul>
+<% end %>

@@ -1,0 +1,6 @@
+class WelcomeController < ApplicationController
+  def index
+		blog_user_id = params[:blog_user_id]
+		cookies.permanent[:blog_user_id] = blog_user_id if !blog_user_id.blank?
+  end
+end

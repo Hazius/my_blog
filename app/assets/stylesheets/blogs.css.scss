@@ -1,0 +1,17 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$black: #000000;
+
+.div_class_comment {
+	outline: 1px solid $black; //kontor bloka;
+}
+
+#div_id_edit_post {
+	border-radius: 20px;
+	box-shadow: 0 0 1px $black;
+	width: 300px;
+	height: 30px;
+	text-align: center;
+}

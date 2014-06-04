@@ -1,0 +1,29 @@
+<% lo_current_user = current_user() %>
+
+<header>	
+	<nav>
+		<div id="id_div_menu_main">
+			<ul id="id_ul_menu_main">
+				| <li>| <%= link_to("Главная", root_path) %> |</li>
+				<% if signed_in? %>
+					<li><%= link_to(lo_current_user.name, user_path(lo_current_user)) %> |</li>
+					<li><%= link_to "Выйти", signout_path, method: "delete" %> |</li>
+					<li><%=link_to("Мой блог", url_options = { controller: "welcome", action: "index", blog_user_id: current_user().id } ) %> |</li>
+				<% else %>
+					<li><%= link_to("Войти", new_session_path) %> |</li>
+					<li><%= link_to("Регистрация", new_user_path) %> |</li>
+				<% end %>
+				<li><%= link_to("Показать все блоги", show_users_with_blog_path) %> |</li>
+			</ul>
+		</div>
+		<div id="id_div_blog_menu">
+			<ul id="id_ul_blog_menu">
+				<% if signed_in? %>
+					
+				<% else %>
+					<li>Вы не зарегистрированы(</li>
+				<% end %>
+			</ul>
+		</div>
+	</nav>
+</header>
