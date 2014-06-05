@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+.div_class_comment {
+  border-bottom: 2px solid black; }
+
+#div_id_edit_post {
+  border-radius: 20px;
+  box-shadow: 0 0 1px black;
+  width: 300px;
+  height: 30px;
+  text-align: center; }
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #666; }
+  a:hover {
+    color: #fff;
+    background-color: #000; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+.text_in_center {
+  text-align: center; }
+
+.border_bottom {
+  border-bottom: 2px solid black; }
+
+h1 {
+  text-align: center; }
+
+A {
+  color: black;
+  text-decoration: none; }
+
+A:visited {
+  color: black; }
+
+A:hover {
+  color: darkturquoise;
+  background: white; }
+
+#id_div_header {
+  margin: 10px 10px 0 10px;
+  height: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black; }
+
+#id_div_sidebarL {
+  margin: 20px 0 0 10px;
+  height: 1000px;
+  width: 250px;
+  float: left;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black; }
+
+#id_div_content {
+  margin: 20px 10px 0 280px;
+  _height: 1000px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px black; }
+
+ul#id_ul_menu_main li {
+  display: inline; }
+
+ul#id_ul_blog_menu li {
+  display: inline; }
+
+.clear {
+  clear: both; }
