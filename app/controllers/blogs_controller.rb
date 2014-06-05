@@ -11,7 +11,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
 		@comment = Comment.new
-		@comments = Comment.where(blog_id: params[:id])
+		@comments = Blog.find(params[:id]).comments #Comment.where(blog_id: params[:id])
   end
 
   # GET /blogs/new

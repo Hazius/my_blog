@@ -19,15 +19,15 @@
 		<%= f.hidden_field :user_id %>
   </div>
 
-  <div class="field">
+  <div class="field text_in_center">
     <%= f.label "Заголовок" %><br>
     <%= f.text_field :title, size: "100" %>
   </div>
-  <div class="field">
+  <div class="field text_in_center">
     <%= f.label "Текст" %><br>
     <%= f.text_area :text, cols: "100", rows: "20" %>
   </div>
-  <div class="actions">
+  <div class="actions text_in_center">
     <%= f.submit "Создать запись" %>
   </div>
 <% end %>

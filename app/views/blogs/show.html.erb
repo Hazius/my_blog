@@ -33,11 +33,10 @@
 <%= "Комментариев пока нет..." if !@comments.any? %>
 <% @comments.each do |comment| %>
     <div class="div_class_comment">
-      <h3><%= comment.name %></h3>
-      Комментарий:<br><%= comment.comment %>
+      <h3><%= "Создал: #{comment.name} (#{comment.created_at})" %></h3>
+      <%= comment.comment %>
     </div>
 <% end %>
-<br><br>
 
 <br><h3>Новый комментарий:</h3><br>
 <%= form_tag( create_from_form_tag_path, method: "post" ) do %>

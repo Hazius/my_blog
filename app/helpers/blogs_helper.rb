@@ -5,7 +5,7 @@ module BlogsHelper
 		user_id_which_created_blog = get_user_id_which_created_blog()
 		if !user_id_which_created_blog.blank?
 			user = User.find(get_user_id_which_created_blog())
-			blogs = Blog.where(user_id: user.id)
+			blogs = user.blogs #Blog.where(user_id: user.id)
 		end
 		return blogs
 	end

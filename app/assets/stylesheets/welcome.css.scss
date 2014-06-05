@@ -19,7 +19,7 @@ $serebristuy: #C0C0C0;
 	//border-radius: 20px;
 	//box-shadow: 0 0 5px #e7d5c0;
 	border-radius: 20px;
-	box-shadow: 0 0 30px $black;
+	box-shadow: 0 0 10px $black;
 }
 
 .text_in_center {
@@ -45,7 +45,7 @@ A:visited {
 
 A:hover {
 	color: $biruzovuy;
-	background: $svetlo_seruy;
+	background: $white;
 }
 
 //Блок сверху
@@ -54,13 +54,13 @@ A:hover {
 	height: 100px;
 	//@include kontor_bloka;
 	@include kryglue_yglu;
-	background: $svetlo_seruy;
+	//background: $svetlo_seruy;
 }
 
 //Блок слева
 #id_div_sidebarL {
 	margin: 20px 0 0 10px;
-	background: $svetlo_seruy;
+	//background: $svetlo_seruy;
 	height: 1000px;
 	width: 250px;
 	float: left;

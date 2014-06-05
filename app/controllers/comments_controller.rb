@@ -22,7 +22,8 @@ class CommentsController < ApplicationController
   end
 
 	def create_from_form_tag
-		@comment = Comment.create(blog_id: params[:blog_id], name: params[:name], comment: params[:comment] )
+		@comment = Blog.find(params[:blog_id]).comments.create(name: params[:name], comment: params[:comment])
+    #Comment.create(blog_id: params[:blog_id], name: params[:name], comment: params[:comment] )
 		redirect_to blog_path(params[:blog_id])
 	end
 
