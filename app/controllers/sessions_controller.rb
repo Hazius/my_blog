@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
 		user = User.find_by(email: params[:session][:email].downcase)
 		if user && user.authenticate(params[:session][:password])
 			sign_in(user)
+			set_user_id_which_created_blog(user.id)
 			redirect_to root_path
 		else
 			flash.now[:error] = "Неверная комбинация email/password"
